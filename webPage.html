@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        body{
+            font-family: "Oswald", sans-serif;
+        }
+
+        section {
+            background-image: url(images/bg-body.png);
+        }
+        div.header {
+            background-color: #3b4186;
+        
+        } 
+        div.center {
+            background-color: #5A63CA;
+            width: 80%; 
+            transition: width 0.3s; 
+        }
+        div.sidebar {
+            background-color: #5A63CA;
+            width: 20%; 
+            transition: width 0.3s; 
+        }
+        div.footer {
+            background-color: #3b4186;
+        }
+       
+        element.hidden {
+            display: none;
+        }
+        select{
+            width: 70px;
+            
+            border-radius: 5px;
+            border-top: 2px solid white;
+        }
+
+        
+        div.select{
+            display: none;
+            height: 1050px;
+            width: 95%;
+            align-items: center;
+            h1{
+                text-decoration: underline;
+            }
+            h2{
+                line-height: 3.3rem;
+            }
+            img{
+                position: relative;
+
+            }
+        }
+        div.containers{
+            background-color: #525BB7;
+            border: 2px solid #424994;
+            div.img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        div.containers.a{
+            border: 2px solid #d2d3eb;
+        }
+
+        div.containers.w{
+            border: 2px solid #1d2485;
+        }
+
+        div.select:target{
+            display: block;
+        }
+
+        div.select#inicio {
+            display: block; 
+        }
+
+    </style>
+    <title>Sistemas Operativos</title>
+</head>
+<body class="body">
+
+    <div class="header w-[100%] h-[70px] flex justify-between">
+        <div class="img w-[210px] h-[40px] m-4 ml-12 flex hover:ml-16 transition-all duration-500">
+            <img src="images/Logo2.png" class="w-[40px] h-[40px] hover:scale-[1.3] transition-all duration-300">
+            <img src="images/Logo.png" class="w-[210px] h-[40px] ml-[-2rem] scale-50 ">
+        </div>
+        <div class="menub m-4 ml-10">
+           <button id="menu-button" class="w-[40px] h-[40px] mr-2">
+                <img src="images/menu-burger.png" class="transition-all duration-200 hover:rotate-90">
+           </button>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="flex">
+
+    <div id="center" class="center h-[1224px] m-4 rounded-[10px] px-4 pt-20">
+
+        <div class="select inicio pt-14" id="inicio">
+            <div class="tt">
+                <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">INICIO</h1>
+            </div>
+            <div class="one flex ml-[7%] mt-20">
+                <div class="containers w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                    <h2 class="text-[35px] ml-12 mt-10 text-white">Sistemas Operativos</h2>
+                    <ul class="ml-16 mt-3">
+                        <li class="text-[24px] text-[#cfcfcf]">- Apple</li>
+                        <li class="text-[24px] text-[#cfcfcf]">- Windows</li>
+                        <li class="text-[24px] text-[#cfcfcf]">- Windows Server</li>
+                        <li class="text-[24px] text-[#cfcfcf]">- D.O.S</li>
+                    </ul>
+                </div>
+                <div class="containers w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                    <img src="images/soi.jpg" class="w-[330px] h-[220px] mx-auto mt-10 rounded-xl">
+                </div>
+            </div>
+            <div class="two flex ml-[7%]">
+                <div class="containers w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                    <img src="images/so.png" class="w-[256px] h-[256px] mx-auto mt-5">
+                </div>
+                <div class="containers w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                    <h4 class="text-end w-[367px] h-[198px] ml-28 mt-14 text-[22px] text-[#cfcfcf]">
+                        En esta página puedes encontrar todas las especificaciones e información necesaria para conocer a los distintos sistemas operativos pertenecientes a las compañías mas importantes
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+
+        <div class="select apple 1 pt-14" id="apple1">
+            <div class="tt">
+                <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE I</h1>
+            </div>
+            <div class="one flex ml-[7%] mt-20">
+                <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                    <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: AppleSoft Basic</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1976</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: MOS Technology 6502</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 6502Hz a 1Mhz</h3>
+                </div>
+                <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                    <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 8bits</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4 KB - 8 KB (48Kb)</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+                </div>
+            </div>
+            <div class="two flex ml-[7%]">
+                <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                    <img src="images/apple1.png" class="w-[256px] h-[256px] mx-auto mt-5 grayscale">
+                </div>
+                <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                    <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                       Novedades Hardware: 
+                    </h4>
+                    <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                        Fue el primer producto de apple diseñado por steve jobs que incluía un monitor y un teclado 
+                    </h3>
+                    <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                        Novedades Software: 
+                     </h4>
+                     <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                        El usuario podía escribir de forma fisica y ver en pantalla el resultado
+                     </h3>
+                </div>
+            </div>
+        </div>
+
+     <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="select apple 2 pt-14" id="apple2">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE II</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: AppleSoft Basic</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1977</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: MOS Technology 6502</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 6502Hz a 1Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 8bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 5 KB - 8 KB (48Kb)</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple1.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                   Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primer producto personal, vendido en forma de caja con un espacio para disco, sonido integrado
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                 </h4>
+                 <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soportaba el software Basic y por primera vez se integraban gráficos a color
+                 </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <div class="select apple 3 pt-14" id="apple3">
+            <div class="tt">
+                <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE II Plus</h1>
+            </div>
+            <div class="one flex ml-[7%] mt-20">
+                <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                    <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: AppleSoft Basic</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1979</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: MOS Technology 6502</h3>
+                    <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 6502Hz a 1Mhz</h3>
+                </div>
+                <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                    <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 8bits</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 16 KB - 64 KB</h3>
+                    <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+                </div>
+            </div>
+            <div class="two flex ml-[7%]">
+                <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                    <img src="images/apple1.png" class="w-[256px] h-[256px] mx-auto mt-5">
+                </div>
+                <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                    <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                        Novedades Hardware: 
+                    </h4>
+                    <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                        Se mejora la capacidad de la ram y ahora hay soporte para discos de 5.25 pulgadas
+                    </h3>
+                    <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                        Novedades Software: 
+                    </h4>
+                    <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                        Sin novedades
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 4 pt-14" id="apple4">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE III</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Apple Operating System</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1980</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Synertek 6502A</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 2 MHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 8bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 128Kb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple1.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Fue el primer producto de appl diseñado especificamente para negocios 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introducción a un SO propio de apple, que permitía funciones multitarea y más caracteristicas
+                </h3>
+            </div>
+        </div>
+        </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="select apple 5 pt-14" id="apple5">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Lisa</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Lisa OS</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1983</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 5 MHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple5.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primera comptadora con un ratón 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primera comptadora con una interfaz gráfica fácil de entender para el usuario
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <div class="select apple 6 pt-14" id="apple6">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Macintosh 128K</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: System Software 1.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1984</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 8 MHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 128KB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple6.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primer computador con todo lo anterior en un diseño compacto, o todo en uno 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz intuitiva
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 8 pt-14" id="apple8">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE llgs</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: ProDOS 8</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1986</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: WDC 65C816</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 2.8Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 256 KB - 8MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple8.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en el rendimiento del procesador, mejor utilizado, mejora en el sonido y gráicos
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introducción a un OS con una interfaz gráfica de usuario mejorada y más optimizada
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+   
+        <div class="select apple 9 pt-14" id="apple9">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Macintosh SE</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: System Software 6.0.8</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1987</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 8 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 MB - 4MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple9.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño compacto y con dos espacios para discos internos
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora el software anterior con la introducción a nuevas capcidades y utilidades para el hardware
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 10 pt-14" id="apple10">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Macintosh II</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: System Software 4.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1987</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 16 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 MB - 8MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple10.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Capacidad de expansión mediante tarjetas
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Sin novedades
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 11 pt-14" id="apple11">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Macintosh Iifx</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: System Software 6.0.7</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1990</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68030</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 40 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 MB - 32 MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple9.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Procesador más rápido con mejor rendimiento gráfico y de cálculos, un diseño bastante avanzado para su época
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en gestión de memoria y rendimiento del SO
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 12 pt-14" id="apple12">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Macintosh Quadra 700</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: System Software 7.0.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1991</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Motorola 68040</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 25 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 MB - 64 MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple12.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño modular para expansión de memoria
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora significativa en la interfaz gráfica y soporte de redes
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        
+        <div class="select apple 13 pt-14" id="apple13">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Power Macintosh 6100</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS 7.5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1994</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC 603</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 60 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 MB - 64 MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple13.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primer macintosh con soporte para el procesador PowerPC, y soporte para conectar tarjetas controladores adicionales a la placa base
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en compatibilidad e interfaz
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 14 pt-14" id="apple14">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Power Macintosh 7100</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS 7.5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1994</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC 603</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 66 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 MB - 136 MB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: Sin especificación clara</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple13.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora en el rendimiento gráfico y procesamiento de datos
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Sin novedades
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+        <div class="select apple 15 pt-14" id="apple15">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Power Macintosh G3</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS 8</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1997</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC G3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 233Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 32 MB - 1GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 66 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple15.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Integración del procesador G3 y mejoras en el rendimiento de cualquier tipo
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Nuevas caracteristicas d interfaz y estabilidad
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 16 pt-14" id="apple16">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE iMac G3 </h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS 8.5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 199</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC G3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 233Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 32 MB - 1GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 66 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple16.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño todo en uno con una carcasa colorida
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras de usabilidad y nuevas caracteristicas
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 17 pt-14" id="apple17">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE Power Macintosh G4</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS 9</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: Sin Kernel</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1999</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC G4</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 450Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 64 MB - 1GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 100 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple17.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en el rendimiento grafico y de calculo, con la integracion del procesador G4
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en estabilidad, rendimiento e interfaz grafica
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 18 pt-14" id="apple18">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE iMac G4</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2002</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC G4</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 700 Mhz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 128 MB - 1GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 133 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple18.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Dsieño con pantalla LCD montada en un brazo ajustable
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz aqua y nuevas caracteristicas de usabilidad
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 19 pt-14" id="apple19">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE iMac G5</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.4 Tiger</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2004</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: PowerPC G5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1.6 GHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM:  DDR SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 256 MB - 2GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 400 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple19.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño todo en uno con pantalla LCD de 17 o 20 pulgadas
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Nuevas caracteristivas como el spotlight, una opción de busqueda rapida para apps, funciones, etc
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 20 pt-14" id="apple20">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac Intel Core Duo</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.4</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2006</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core Duo</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1.83 GHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 2</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR2 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 512 MB - 2GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 667 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple19.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Transición a procesadores intel, mejorando el rendimiento
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para el nuevo procesador intel
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+   
+        <div class="select apple 21 pt-14" id="apple21">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac (Aluminum)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2009</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core Duo</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 2.66 GHz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 2</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4GB - 16GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 1066 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple21.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño en aluminio, pantalla de 21.5 o 27 pulgadas con más opciones de conectividad
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejor rendimiento y nuveas caracteristicas y funcionalidades
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 22 pt-14" id="apple22">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac (mini-pro)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.6 Snow Leopard</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 10.8</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2009</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core 2 Duo</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3,06 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 2</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4GB - 16GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 1066 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple22.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introducciones a posibles actualizaciones del procesador
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Compatibilidad con el leopard
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 23 pt-14" id="apple23">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac mid</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: Mac OS X 10.7 Lion</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 13</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2011</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core i5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3,1 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: x86 - 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 4</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8GB - 32GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 1333 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple23.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Incorporación de procesador quad core
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mac App Store y caracteristicas como launchpad
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 24 pt-14" id="apple24">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Mac pro late</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: OS X Mavericks 10.9</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 13</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2013</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Xeon E5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.7 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: x86 - 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 6</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 12GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 1866 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple24.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño compacto y opciones avanzadas de GPU
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras de rendimiento y seguridad
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 25 pt-14" id="apple25">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">APPLE iMac Retina 5K e</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: OS X Yosemite</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 13</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2014</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core i5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.5 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: x86 - 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 4</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 GB - 32 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 1600 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple25.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Pantalla retina 5k con resolución de 5120 x 2880 pixeles con un diseño delgado y elegante
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras significativas en caracteristicas e interfaz
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 26 pt-14" id="apple26">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac 18.3</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Sierra 10.12</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 15.6</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2017</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador: Intel Core i5 Quad core</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.4 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: x86 - 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 4</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR4 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 GB - 64 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 2400 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple26.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora en el rendimiento gráfico con la inclusión de GPU AMD
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Siri y funcion de continuity
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 27 pt-14" id="apple27">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Mac mini (2018)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Mojave 10.14</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 18.7</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2018</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Core i5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: x86 - 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 6</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR4 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 GB - 64 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 2666 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple27.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora en el rendimiento e inclusion de almacenamiento con SSD
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introducción de caracteristicas como dark mode
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 28 pt-14" id="apple28">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Mac mini (2020)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Big Sur 11.x</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 20.6</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2020</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Apple M1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.2 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: ARM64</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 8</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: LPDDR4</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 - 16GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 4266 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple28.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mjeoras con el M1
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Nueva interfaz y mejor integracion con la arquitectura ARM64
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 29 pt-14" id="apple29">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Apple iMac</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Big Sur</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 21</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2021</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Apple M1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.2 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: ARM64</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 8</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: LPDDR4</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 8 - 16GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 2400 MT/s</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple28.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Diseño delgado, pantalla con retina 4.5K y procesador con arquitectura ARM
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para el hardware M1 y nuevas caracteristicas de interfaz
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="select apple 30 pt-14" id="apple30">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Apple Mac Studio</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Monterey</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 21</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2022</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Apple M1 Ultra</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.6 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: ARM64</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 20</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: LPDDR5</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 32 GB - 128 GB </h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 4266 MT/s</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple30.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Rendimiento extremo con M1 ultra, multiples opciones de conectividad con un nuevo diseño compacto
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para M1 ultra y nuevas capcidades de software con inclusiones de interfaz
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 31 pt-14" id="apple31">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Mac pro (2023)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS Ventura 13.x</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 22.3.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2023</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Apple M2 Ultra</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 3.9 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: ARM64</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 24</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: CHIP M2 INTEGRADO</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 192GB </h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: + 4266 MT/s</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple31.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Proporciona la ram dentro del chip, y un M2 con menor consumo de energía
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en el rendimiento de diferentes aplicaciones 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select apple 32 pt-14" id="apple32">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">iMac (2024)</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers a w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: macOS senoma</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: XNU 23</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2024</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Apple M3 Ultra</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 4.1 Ghz</h3>
+            </div>
+            <div class="containers a text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: ARM64</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 32</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: CHIP M3 INTEGRADO</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 192GB </h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: + 4266 MT/s</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers a w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/apple32.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers a w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Puertos thunderbolt, y conexión wifi 6E
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para el nuevo SO 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w1 pt-14" id="w1">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 1.0</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 1.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1985</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel 8086</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 4.77 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 256 Kb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 4.7 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w1.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Primera versión del windows incluyendo un soporte para mouse
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz gráfica básica con una multitarea 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w2 pt-14" id="w2">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 2.0</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 2.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1987</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel 8088</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 4.77 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 512 Kb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 4.7 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w2.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para incluir transferencia de imagen por VGA
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en la administración de memoria e inclusión de ventanas superpuestas 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w3 pt-14" id="w3">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 3.0</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 3.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1990</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel 80286</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 6 - 20 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 6 - 20 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w3.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introducción para un soporte de mejores procesadores
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para 265 colores y multitares mejoradas  
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w4 pt-14" id="w4">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 3.1</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 3.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 3.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1992</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel 80386</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 20 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 16 bits/ 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 20 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w4.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en compatibilidad con herramientas actualizadas de hardware
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para nuevas fuentes y multimedia mejorado para la administración de archivos  
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w5 pt-14" id="w5">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 95 </h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 4.0</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 4x</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1995</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel 80486</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 33 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: EDO DRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 33 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w5.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Introdccuón al pug and play
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz gráfica de usuario tatalmente mejorad y diseñada de nuevo  
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w6 pt-14" id="w6">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 98</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 4.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 4x</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 1998</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 66 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 16 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 66 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w6.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para un puerto USB 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mayor estabilidad en el uso del hardawre y la introducción de internet explorer 4  
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w7 pt-14" id="w7">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows ME</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 4.9</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: 4x</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium II</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 150 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 32 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 100 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w7.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora en procesamiento multimedia
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Herramientas de recuperacion del sistema y programas para mostrar contenido multimedia 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w8 pt-14" id="w8">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 2000</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 5</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium III</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 233 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 64 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 133 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w8.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Eficacia y máximo rendimiento en el uso del procesador 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Salto al sistema de archivos NTFS, (New Techonolgy Files Sysrtem)
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w9 pt-14" id="w9">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows XP</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 5.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 5.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2001</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium III</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 233 Mhz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 128 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 133 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w9.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para materiales de hardware mas moderno
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Windows media player e interfaz de usuario con nuevo diseño
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w10 pt-14" id="w10">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows Vista</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 6</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 6</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2006</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium 4</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 800 MHz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 /64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 512 Mb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 400 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w10.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejora en materiales
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz grafixca aereo y mejora en la seguridad con cuentas de usuario
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w11 pt-14" id="w11">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 7</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 6.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 6.1</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2009</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Pentium 4</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 /64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR2 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 400 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w11.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mayor eficacia energetica
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz de usuario moderna y compatibilidad con aplicaciones de nuevas versiones
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w12 pt-14" id="w12">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 8</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 6.2</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 6.2</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2012</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Atom</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 /64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR2/DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 533 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w12.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para usb  3.0 y optimizacion para pantallas tactiles
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Interfaz Metro con tienda de aplicaciones
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w13 pt-14" id="w13">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 8.1</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 6.3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 6.3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2013</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Atom</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 /64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR2/DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 GB</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 533 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w13.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras y optimiación en distintas herramientas, incluyendo soporte para pantallas de alta resolución
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Mejoras en la interfaz y funcionalidad para busqueda de herramientas y funciones
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w14 pt-14" id="w14">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 10</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 10</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 10</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2015</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Atom</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 32 /64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 1</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR3 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 1 Gb (32-bit) / 2 Gb (64-bit)</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 800 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w14.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Soporte para directX12, y compatibilidad con hardware moderno 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Cortana y asistentes virtuales con la actualizacion de microsoft edge en vez de internet explorer
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+        <div class="select w15 pt-14" id="w15">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 11</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 10.0.22000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 10.0.2</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2021/h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Core i3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 2</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR4 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4 Gb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 2133 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w15.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Nuevos requisitos de hardware para el soporte del SO, como chips especializados con sporte para TPM 2.0 
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Rediseño en una interfaz mucho más intuitiva y gráfica con la mejora en productividad e inclusión de microsoft teams
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <div class="select w16 pt-14" id="w16">
+        <div class="tt">
+            <h1 class="text-[45px] pt-6 ml-[8%] text-white w-[100%] font-bold">Windows 11</h1>
+        </div>
+        <div class="one flex ml-[7%] mt-20">
+            <div class="containers w w-[415px] h-[300px] m-2 rounded-tl-3xl hover:m-0 transition-all duration-500">
+                <h3 class="ml-12 mt-12 text-[20px] text-[#cfcfcf]">Version SO: 10.0.22000</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Version Kernel: NT 10.0.2</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Año Lanzamiento: 2021/h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Procesador:  Intel Core i3</h3>
+                <h3 class="ml-12 mt-2 text-[20px] text-[#cfcfcf]">Velocidad Procesador: 1Ghz</h3>
+            </div>
+            <div class="containers w text-end w-[415px] h-[300px] m-2 rounded-tr-3xl hover:m-0 transition-all duration-500">
+                <h3 class="mr-12 mt-12 text-[20px] text-[#cfcfcf]">Arquitectura Procesador: 64 bits</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Hilos Procesador: 2</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Tipo RAM: DDR4 SDRAM</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Capacidad RAM: 4 Gb</h3>
+                <h3 class="mr-12 mt-2 text-[20px] text-[#cfcfcf]">Frecuencia RAM: 2133 Mhz</h3>
+            </div>
+        </div>
+        <div class="two flex ml-[7%]">
+            <div class="containers w w-[298px] h-[300px] m-2 rounded-bl-3xl hover:m-0 transition-all duration-500">
+                <img src="images/w16.png" class="w-[256px] h-[256px] mx-auto mt-5">
+            </div>
+            <div class="containers w w-[530px] h-[300px] m-2 rounded-br-3xl hover:m-0 transition-all duration-500">
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Hardware: 
+                </h4>
+                <h3 class="text-start ml-6 text-[22px] text-[#cfcfcf]">
+                    Solo soportado para chips en especifico, SI O SI CON CONEXIÓN A INTERNET
+                </h3>
+                <h4 class="text-start ml-6 mt-6 text-[22px] text-[#ffffff]">
+                    Novedades Software: 
+                </h4>
+                <h3 class="text-start ml-6 text-[17px] text-[#cfcfcf]">
+                    Particiones no accesibles para el usuario para actualizaciones más rápidas, mayor presencia de IA, conexión a dispositivos android e interfaz de usuario moderna con barra de tareas flotante, similar a MacOs. 
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    </div>
+    <div id="sidebar" class="sidebar h-[80%px] rounded-[10px] m-4">
+
+        <div class="text">
+            <h1 class="text-white text-[28px] pl-6 pt-4">Sistemas Operativos</h1>
+            <h3 class="text-[#cecece] text-[14px] pl-6 pt-2 mr-2">Conozca los sistemas operativos diseñados por las empresas más grandes de tecnología en el mundo</h3>
+        </div>
+
+        <div class="inicio flex pl-6 hover:pl-8 transition-all duration-500 mt-20">
+            <a href="#inicio" class="percent bg-[#424994] text-[#CFCFCF] text-center rounded-[8px] w-[70px] h-[70px]">
+                <img src="images/home.png" class="scale-[0.7]">
+            </a>
+            <div class="textCont pl-2 pt-2">
+                <h3 class="text-[#CFCFCF] text-[22px]">INICIO</h3>
+                <h5 class="text-[#CFCFCF] text-[10px]">Dirijase al inicio de la página</h5>
+            </div>
+        </div>
+
+        <div class="apple flex pl-6 pt-8 hover:pl-8 transition-all duration-500 mt-8">
+            <label class="percent bg-[#424994] text-[#CFCFCF] text-center rounded-[8px] w-[70px] h-[70px]">
+                <img src="images/apple.png" class="scale-[0.7]">
+                <select name="apple" id="one" class="bg-[#424994]">
+                    <option value="">Apple</option>
+                    <option value="apple1">Apple I</option>
+                    <option value="apple2">Apple II</option>
+                    <option value="apple3">Apple II plus</option>
+                    <option value="apple4">Apple III</option>
+                    <option value="apple5">Apple Lisa</option>
+                    <option value="apple6">Apple Macintosh 128K</option>
+                    <option value="apple8">Apple llgs</option>
+                    <option value="apple9">Macintosh SE</option>
+                    <option value="apple10">Apple Macintosh II</option>
+                    <option value="apple11">Macintosh Iifx</option>
+                    <option value="apple12">Apple Macintosh Quadra 700</option>
+                    <option value="apple13">Apple Power Macintosh 6100</option>
+                    <option value="apple14">Apple Power Macintosh 7100</option>
+                    <option value="apple15">Power Macintosh G3</option>
+                    <option value="apple16">Apple iMac G3</option>
+                    <option value="apple17">Apple Power Macintosh G4</option>
+                    <option value="apple18">Apple iMac G4</option>
+                    <option value="apple19">Apple iMac G5</option>
+                    <option value="apple20">iMac Intel Core Duo</option>
+                    <option value="apple21">iMac (Aluminum)</option>
+                    <option value="apple22">iMac (mini-pro)</option>
+                    <option value="apple23">iMac mid</option>
+                    <option value="apple24">Mac pro late</option>
+                    <option value="apple25">Apple iMac Retina 5K</option>
+                    <option value="apple26">iMac 18.3</option>
+                    <option value="apple27">Mac mini (2018)</option>
+                    <option value="apple28">Mac mini (2020)</option>
+                    <option value="apple29">Apple iMac</option>
+                    <option value="apple30">Apple Mac Studio</option>
+                    <option value="apple31">Mac pro (2023)</option>
+                    <option value="apple32">iMac (2024)</option>
+                </select>
+            </label>
+            <div class="textCont pl-2 pt-2">
+                <h3 class="text-[#CFCFCF] text-[22px]">APPLE</h3>
+                <h5 class="text-[#CFCFCF] text-[10px] mr-3">Computadores de escitorio producidos por apple</h5>
+            </div>
+        </div>
+
+        <div class="win flex pl-6 pt-8 hover:pl-8 transition-all duration-500 mt-16">
+            <label class="percent bg-[#424994] text-[#CFCFCF] text-center rounded-[8px] w-[70px] h-[70px]">
+                <img src="images/windows.png" class="scale-[0.7]">
+                <select name="windows" id="two" class="bg-[#424994]">
+                    <option value="">Windows</option>
+                    <option value="w1">Windows 1.0</option>
+                    <option value="w2">Windows 2.0</option>
+                    <option value="w3">Windows 3.0</option>
+                    <option value="w4">Windows 3.1</option>
+                    <option value="w5">Windows 95</option>
+                    <option value="w6">Windows 98</option>
+                    <option value="w7">Windows ME</option>
+                    <option value="w8">Windows 2000</option>
+                    <option value="w9">Windows XP</option>
+                    <option value="w10">Windows Vista</option>
+                    <option value="w11">Windows 7</option>
+                    <option value="w12">Windows 8</option>
+                    <option value="w13">Windows 8.1</option>
+                    <option value="w14">Windows 10</option>
+                    <option value="w15">Windows 11</option>
+                    <option value="w16">Windows 12</option>
+                </select>
+            </label>
+            <div class="textCont pl-2 pt-2">
+                <h3 class="text-[#CFCFCF] text-[22px]">WINDOWS</h3>
+                <h5 class="text-[#CFCFCF] text-[10px] mr-3">Sistemas operativos diseñados por microsoft para uso común</h5>
+            </div>
+        </div>
+
+        <div class="winS flex pl-6 pt-8 hover:pl-8 transition-all duration-500 mt-16">
+            <label class="percent bg-[#424994] text-[#CFCFCF] text-center rounded-[8px] w-[70px] h-[70px]">
+                <img src="images/server.png" class="scale-[0.7]">
+                <select name="windowsServer" id="three" class="bg-[#424994]">
+                    <option value="">Win. Server</option>
+                    <option value="ws1">Windows NT 3.1 </option>
+                    <option value="ws2">Windows NT 3.5 </option>
+                    <option value="ws3">Windows NT 4.0  </option>
+                    <option value="ws4">Windows 2000 Server </option>
+                    <option value="ws5">Windows XP Professional </option>
+                    <option value="ws6">Windows Server 2003 </option>
+                    <option value="ws7">Windows Vista Business  </option>
+                    <option value="ws8">Windows Server 2008 </option>
+                    <option value="ws9">Windows 7 Professional </option>
+                    <option value="ws10">Windows 8 pro </option>
+                    <option value="ws11">Windows Server 2012 </option>
+                    <option value="ws12">Windows 10 Pro </option>
+                    <option value="ws13">Windows Server 2016 </option>
+                    <option value="ws14">Windows Server 2019 </option>
+                    <option value="ws15">Windows 11 Pro </option>
+                    <option value="ws16">Windows Server 2022 </option>
+                </select>
+            </label>
+            <div class="textCont pl-2 pt-2">
+                <h3 class="text-[#CFCFCF] text-[22px]">WIN. SERVER</h3>
+                <h5 class="text-[#CFCFCF] text-[10px] mr-3">Sistemas operativos diseñados por microsoft para uso empresarial</h5>
+            </div>
+        </div>
+
+        <div class="dos flex pl-6 pt-8 hover:pl-8 transition-all duration-500 mt-16">
+            <label class="percent bg-[#424994] text-[#CFCFCF] text-center rounded-[8px] w-[70px] h-[70px]">
+                <img src="images/dos.png" class="scale-[0.7]">
+                <select name="dos" id="four" class="bg-[#424994]">
+                    <option value="">D.O.S</option>
+                    <option value="dos1">D.O.S</option>
+                    <option value="dos2">D.O.S</option>
+                    <option value="dos3">D.O.S</option>
+                    <option value="dos4">D.O.S</option>
+                    <option value="dos5">D.O.S</option>
+                    <option value="dos6">D.O.S</option>
+                    <option value="dos7">D.O.S</option>
+                    <option value="dos8">D.O.S</option>
+                    <option value="dos9">D.O.S</option>
+                    <option value="dos10">D.O.S</option>
+                    <option value="dos11">D.O.S</option>
+                    <option value="dos12">D.O.S</option>
+                    <option value="dos13">D.O.S</option>
+                    <option value="dos14">D.O.S</option>
+                    <option value="dos15">D.O.S</option>
+                    <option value="dos16">D.O.S</option>
+                    <option value="dos17">D.O.S</option>
+                    <option value="dos18">D.O.S</option>
+                </select>
+            </label>
+            <div class="textCont pl-2 pt-2">
+                <h3 class="text-[#CFCFCF] text-[22px]">D.O.S</h3>
+                <h5 class="text-[#CFCFCF] text-[10px] mr-3">Primeros sistemas operativos diseñados por microsoft</h5>
+            </div>
+        </div>
+
+        
+    </div>
+
+    </section>
+    
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="footer w-[100%] h-[100px] justify-center">
+        <div class="text-[#b1b1b1] pt-4 flex justify-center text-[10px]">
+            <h1 class="">Juan José Posada Pérez</h1>
+        </div>
+        <div class="text-[#b1b1b1] pt-2 flex justify-center text-[10px]">
+            <h1 class="">14/08/2024</h1>
+        </div>
+        <div class="text-[#b1b1b1] pt-2 flex justify-center text-[10px]">
+            <h1 class="">© All rights reserved 2024 </h1>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar el div seleccionado y ocultar los demás
+        function showSelectedDiv(id) {
+            const divs = document.querySelectorAll('div.select');
+            divs.forEach(div => {
+                if (div.id === id) {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            });
+            window.location.hash = id;
+        }
+    
+        // Maneja los clics en los enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const id = this.getAttribute('href').substr(1);
+                showSelectedDiv(id);
+            });
+        });
+    
+        // Maneja los cambios en los selects
+        function setupSelectHandler(id) {
+            const selectElement = document.getElementById(id);
+            selectElement.addEventListener('change', function() {
+                const value = this.value;
+                if (value) {
+                    showSelectedDiv(value);
+                }
+            });
+        }
+    
+        setupSelectHandler('one');
+        setupSelectHandler('two');
+        setupSelectHandler('three');
+        setupSelectHandler('four');
+    
+        // Muestra el div "inicio" por defecto al cargar la página
+        window.addEventListener('load', function() {
+            showSelectedDiv('inicio');
+        });
+    
+    
+        // El código existente para el botón de menú
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var sidebar = document.getElementById('sidebar');
+            var center = document.getElementById('center');
+    
+            if (sidebar.classList.contains('hidden')) {
+                sidebar.classList.remove('hidden');
+                center.style.width = '80%'; 
+            } else {
+                sidebar.classList.add('hidden');
+                center.style.width = '100%'; 
+            }
+        });
+    </script>
+
+</body>
+</html>
