@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    background-image: url(../images/bg-body.png);
+}
+div.header {
+    background-color: #3b4186;
+
+} 
+div.center {
+    background-color: #5A63CA;
+    width: 80%; 
+    transition: width 0.3s;
+    transition: all ease-in .3s; 
+}
+div.center:hover{
+    cursor: crosshair;
+}
+div.sidebar {
+    background-color: #5A63CA;
+    width: 20%; 
+    transition: width 0.3s; 
+}
+div.footer {
+    background-color: #3b4186;
+}
+
+element.hidden {
+    display: none;
+}
+select{
+    width: 70px;
+    
+    border-radius: 5px;
+    border-top: 2px solid white;
+}
+
+
+div.select{
+    display: none;
+    height: 1050px;
+    width: 95%;
+    align-items: center;
+    h1{
+        text-decoration: underline;
+    }
+    h2{
+        line-height: 3.3rem;
+    }
+    img{
+        position: relative;
+
+    }
+}
+div.containers{
+    background-color: #525BB7;
+    border: 2px solid #424994;
+    div.img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+div.containers.a{
+    border: 2px solid #d2d3eb;
+}
+
+div.containers.w{
+    border: 2px solid #1d2485;
+}
+
+div.containers.ws{
+    border: 2px solid #2732c0;
+}
+
+div.containers.dos{
+    border: 2px solid #5e1979;
+}
+
+div.select:target{
+    display: block;
+}
+
+div.select#inicio {
+    display: block; 
+}
