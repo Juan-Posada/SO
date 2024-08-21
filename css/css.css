@@ -57,14 +57,22 @@ div.select{
 
     }
 }
+
+
 div.containers{
     background-color: #525BB7;
     border: 2px solid #424994;
-    div.img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    img.img{
+        transition: all ease-in 0.4s;   
     }
+ 
+    img.img:hover{
+        width: 298px;
+        height: 296px;
+        margin-top: 0;
+        border-bottom-left-radius: 1.5em;
+    }
+
 }
 div.containers.a{
     border: 2px solid #d2d3eb;
@@ -80,7 +88,13 @@ div.containers.ws{
 
 div.containers.dos{
     border: 2px solid #5e1979;
+    transition: all ease-in 0.5s;
 }
+
+div.containers:hover{
+    background-color: #3d47bb;
+}
+
 
 div.select:target{
     display: block;
